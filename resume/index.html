@@ -1,0 +1,128 @@
+ <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!-- declares the characterset -->
+    <!--sets the default character for the site so it can be read -->
+    <meta name="description" content="Resume " />
+    <!-- shows under the link in the search engine and allows people to see a summary of the page content -->
+    <title> MLHubbard Resume</title>
+    <meta name="author" content="Melissa Hubbard" />
+    <!-- tells who the author is -->
+    <link rel="stylesheet" type="text/css" href="assets/css/screen.css">
+</head>
+   <header>
+    <!-- Main navigation -->
+    <nav class="primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+    </nav>
+  </header>
+  <!-- Main -->
+  <main itemscope itemtype="http://schema.org/Person">
+    <h1>Melissa Hubbard</h1>
+    <section id="about">
+      <h2>Personal details</h2>
+      <img itemprop="image" src="assets/img/mlhubbard.jpg"width="400" height="400"> <alt="Melissa Hubbard">
+      <p itemprop="description">Statement of Intent</p>
+      <dl>
+        <dt>Name</dt>
+        <dd itemprop="name">
+          <span itemprop="givenName">Melissa</span> <span itemprop="familyName">Hubbard</span>
+        </dd>
+        <dt>Date of birth</dt>
+        <dd itemprop="birthDate"><time datetime="1976-10-12">02/24/1965</time></dd>
+        <dt>Nationality</dt>
+        <dd itemprop="nationality">African American</dd>
+        <dt>Location</dt>
+        <dd itemprop="homeLocation">Arkansas</dd>
+        <dt>Telephone</dt>
+        <dd>
+          <a itemprop="telephone" href="tel:555.555.5555">501-554-9135</a>
+        </dd>
+        <dt>Email</dt>
+        <dd>
+          <a itemprop="email" href="mailto:email@mail.com">mlhubbard@ualr.edu</a>
+        </dd>
+        <dt>Address</dt>
+
+        <dd itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="streetAddress">2801 South University</span>
+          <span itemprop="addressLocality">Little Rock</span>
+          <span itemprop="postalCode">72204</span>
+          <span itemprop="addressCountry">USA</span>
+        </dd>
+
+      </dl>
+      <ul class="related-links">
+        <li><a itemprop="url" rel="me" href="https://github.com/MLHubbard-AR/ifsc-3342.git">github</a></li>
+        <li><a itemprop="url" rel="me" href="https://www.linkedin.com/feed/?trk=onboarding-landing">linkedin</a></li>
+        <li><a itemprop="url" href="resume.pdf" download>pdf resume</a></li>
+      </ul>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li class="skill">HTML</li>
+        <li class="skill">PHP</li>
+        <li class="skill">Java</li>
+        <li class="skill">Scss</li>
+        <li class="skill">Adobe Illustrator</li>
+        <li class="skill">Microsoft Word</li>
+        <li class="skill">Microsoft Excel</li>
+        <li class="skill">Medical Terminology</li>
+        <li class="skill">Typing 65 - 70 wpm</li>
+        <li class="skill">Scss</li>
+        
+      </ul>
+    </section>
+    <section id="experience">
+      <h2>Experience</h2>
+      <!-- current job -->
+      <article class="job">
+        <h3 itemprop="jobTitle">Contract Analyist</h3>
+        <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+          <span itemprop="name">University of Arkansas Medical Sciences</span>
+          <span>April 1998 - Present</span>
+          <p itemprop="description">Responsible for bundle billing charges for transplant patients, Resolving denied charges, Customer Service, Collections.</p>
+          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+          <a itemprop="url" href="http://link-to-company.com">http://uams.edu/</a>
+          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="addressLocality">Little Rock, AR</span>
+          </span>
+          </span>
+        </div>
+      </article>
+      <!-- Previous Jobs - Notice Slightly Different Format-->
+      <article class="job" itemscope itemtype="http://schema.org/Event/Job">
+        <h3 itemprop="name">Assistant Supervisor</h3>
+          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+          <span itemprop="name">American Investors</span>
+          
+          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="addressLocality">Anywhere,USA</span>
+          </span>
+          </span>
+          <span itemprop="startDate" content="2006-02-21T20:00">May 1997</span>
+          <span itemprop="endDate" content="2009-02-21T20:00">June 1998</span>
+        <p itemprop="description">Responsible for Training New Employees, Weekly Time Cards , Customer Service Data Entry, Processing Medical Claims, Payments, Adjustments, Collections and Refunds.
+May 1997 June 1998</p>
+      </article>
+      </section>
+    <section id="education">
+      <h2>Education</h2>
+      <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+        <h3 itemprop="description"><abbr title="Master of Science">Associates of<br>Science in Liberal Arts and Sciences</h3>
+          <span itemprop="name">University of Arkansas Pulaski Technical College</span>
+          <span itemprop="location" itemscope>North Little Rock, AR</span>
+          <span>2015 -2017</span>
+      </article>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div id="copyright">
+      &copy; company. All rights reserved.
+    </div>
+  </footer>
